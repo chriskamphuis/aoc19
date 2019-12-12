@@ -1,18 +1,10 @@
 import re
 import numpy as np
-from math import gcd
-from functools import reduce
 
 coordinates = []
 velocities = []
 start_c = []
 start_v = []
-
-def lcm(a,b):
-    return (a*b)//gcd(a,b)
-
-def lcm_multiple(xs):
-    return reduce(lcm, xs)
 
 with open('input.txt', 'r') as f:
     for line in f:
